@@ -1,0 +1,666 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* start nav */
+nav {
+    width: 100vw;
+    height: 100px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a3d4d;
+    /*     position: fixed;
+    top: 0; */
+    z-index: 99;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .logo:hover {
+    color: yellow;
+}
+
+nav ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+nav button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* end nav */
+
+/* start hero */
+
+.hero {
+    width: 100%;
+    height: calc(98vh - 100px);
+    background-color: #0eaa9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero .picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #2a3d4d;
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.hero .picture img {
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.hero .picture img:hover {
+    transform: translateY(-5%);
+    transition: 1s all 0.1s;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.star {
+    position: relative;
+    margin-top: 10px;
+}
+
+.star::before {
+    content: " ";
+    width: 110px;
+    height: 2px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    left: -64%;
+}
+
+.star::after {
+    content: " ";
+    width: 110px;
+    height: 2px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(100%, -50%);
+    right: -64%;
+}
+
+.hero .job {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* End Hero */
+
+/* Start Portfolio */
+
+.portfolio {
+    width: 100vw;
+    padding: 80px 0;
+    color: #2a3d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio h1 {
+    font-size: 40px;
+}
+
+.portfolio .star::before {
+    background-color: #2a3d4d;
+}
+
+.portfolio .star::after {
+    background-color: #2a3d4d;
+}
+
+.portfolio .cards {
+    display: flex;
+    margin-top: 40px;
+    width: 700px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.portfolio .cards .card {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.card1 {
+    background-color: #b94d64;
+}
+
+.card2 {
+    background-color: #120e0f;
+}
+
+.card3 {
+    background-color: #1da5b5;
+}
+
+.card4 {
+    background-color: #1c84c1;
+}
+
+.card5 {
+    background-color: #0f38b4;
+}
+
+.card6 {
+    background-color: #ccb2a3;
+}
+
+.portfolio .cards .card img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+/* End portfolio */
+
+/* Start About */
+
+.about {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #0eaa9d;
+}
+
+.about h1 {
+    padding-top: 20px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.about h1:hover {
+    color: yellow;
+    transition: 0.7s all;
+}
+
+.about .contant {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .contant p {
+    width: 45%;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.about .btn {
+    background-color: transparent;
+    padding: 16px 32px;
+    font-size: 18px;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.about .btn i {
+    margin-right: 5px;
+}
+
+/* End About */
+
+/* Start Contact */
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact h1 {
+    padding-top: 20px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #2a3d4d;
+}
+
+.contact .star {
+    color: #2a3d4d;
+}
+
+.contact form {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact input {
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    padding: 15px 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.795);
+}
+
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.contact .btn {
+    padding: 12px;
+    background-color: #0eaa9d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.contact .star::before {
+    background-color: #2a3d4d;
+}
+
+.contact .star::after {
+    background-color: #2a3d4d;
+}
+
+/* End Contact */
+
+/* Start Footer */
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #2a3d4d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .location {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .location p {
+    text-align: center;
+    line-height: 150%;
+}
+
+footer .follow {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .follow .follow-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .follow .follow-links a {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer .about-freelancer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .about-freelancer p {
+    text-align: center;
+    line-height: 150%;
+}
+
+footer .about-freelancer p a {
+    color: #0eaa9d;
+    text-decoration: none;
+}
+
+footer .copyright {
+    width: 100%;
+    height: 80px;
+    background-color: #1a2730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/* End Footer */
+
+
+@media screen and (max-width: 575px) {
+    nav {
+        padding: 0 24px;
+    }
+
+    nav .logo {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: block;
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .star::before,
+    .star::after {
+        width: 80px;
+    }
+
+    .hero .job {
+        font-size: 16px;
+    }
+
+    .portfolio {
+        padding: 24px;
+    }
+
+    .portfolio h1 {
+        font-size: 24px;
+    }
+
+    .portfolio .cards {
+        width: 100%;
+    }
+
+    .portfolio .cards .card {
+        width: 60%;
+    }
+
+    .about .contant {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .about h1 {
+        font-size: 24px;
+    }
+
+    .about .contant p {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .about .btn {
+        font-size: 14px;
+    }
+
+    .contact {
+        padding: 60px;
+    }
+
+    .contact h1 {
+        font-size: 24px;
+    }
+
+    .contact form {
+        width: 80%;
+        height: 90%;
+    }
+
+    .contact form input {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 70vh;
+    }
+
+    footer .footer-container {
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    footer .location,
+    footer .follow,
+    footer .about-freelancer {
+        width: 100%;
+        gap: 10px;
+    }
+
+    footer h4 {
+        font-size: 16px;
+    }
+
+    footer p,
+    footer a {
+        font-size: 12px;
+    }
+
+    footer .copyright {
+        position: static;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    nav {
+        padding: 0 40px;
+    }
+
+    nav .logo {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    nav ul {
+        width: 40%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero .job {
+        font-size: 20px;
+    }
+
+    .portfolio {
+        padding: 40px;
+    }
+
+    .portfolio h1 {
+        font-size: 32px;
+    }
+
+    .portfolio .cards {
+        width: 100%;
+    }
+
+    .portfolio .cards .card {
+        width: 45%;
+    }
+
+    .about h1 {
+        font-size: 32px;
+    }
+
+    .about .contant {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .about .contant p {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .contact {
+        padding: 60px;
+    }
+
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .contact form {
+        width: 80%;
+        height: 90%;
+    }
+
+    footer {
+        height: 70vh;
+    }
+
+    footer .footer-container {
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    footer .location,
+    footer .follow,
+    footer .about-freelancer {
+        width: 100%;
+        gap: 10px;
+    }
+
+    footer .copyright {
+        position: static;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    nav {
+        padding: 0 60px;
+    }
+
+    .about .contant {
+        width: 65%;
+    }
+
+    .portfolio {
+        padding: 60px;
+    }
+
+    /* .portfolio .cards {
+        width: 100%;
+    }
+
+    .portfolio .cards .card {
+        
+    } */
+
+    .contact {
+        padding: 60px;
+    }
+
+    .contact form {
+        width: 60%;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+
+    footer .follow {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {}
